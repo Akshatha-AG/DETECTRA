@@ -1,62 +1,76 @@
-🛡️ Detectra
-
-XAI Powered Multilingual Scam Detection System
+#  Detectra  
+Multilingual Scam Detection using Explainable AI (XAI)
 
 AI-powered platform for detecting scam SMS messages and call transcripts with explainable insights using modern NLP and deep learning techniques.
 
-📌 Problem Statement
+---
+
+Problem Statement
 
 With the rapid growth of digital communication, scam messages and fraudulent calls have increased significantly. These scams often attempt to steal sensitive information such as OTPs, bank details, or personal data.
 
-Existing systems only classify messages as spam without explaining the reason, which leads to:
+Existing systems only classify messages as spam without providing any explanation, leading to low user trust and lack of awareness.
 
- Low user trust
- Lack of awareness
- Poor transparency
- Solution
+---
 
-Detectra provides an AI-powered scam detection system that:
+Solution
 
-Detects scam messages using deep learning
-Supports multilingual inputs
-Provides explainable predictions using XAI
-Helps users understand why a message is flagged
-⚙️ Features
-📩 Input Handling
-SMS message input
-Voice-based input (call simulation)
-🌐 Multilingual Support
-English
-Hindi
-Kannada
-Tamil
-Hinglish
-🧠 Scam Detection
-DistilBERT-based classification
-Scam / Genuine prediction
-Confidence score
-🔍 Explainable AI (XAI)
-LIME-based explanation
-Highlights important words affecting prediction
-Improves transparency
-🚨 Scam Categorization
-OTP Fraud
-Phishing
-KYC Scam
-Banking Scam
-Lottery Scam
-📊 Analytics Dashboard
-Total messages
-Scam vs Genuine count
-Pie chart visualization
-📄 Report Generation
-Download analysis report
-Includes predictions + logs
-🔐 Cybersecurity Measures
-Alerts users about risky messages
-Suggests safe practices
-Improves awareness
-🏗️ Architecture
+Detectra is an AI-powered system that:
+
+- Detects scam messages using deep learning
+- Supports multilingual inputs
+- Provides explainable predictions using XAI (LIME)
+- Improves user awareness and trust
+
+---
+
+Features
+
+### 📩 Input Handling
+- SMS message input
+- Voice-based input (call simulation)
+
+Multilingual Support
+- English
+- Hindi
+- Kannada
+- Tamil
+- Hinglish
+
+Scam Detection
+- DistilBERT-based classification
+- Scam / Genuine prediction
+- Confidence score
+
+Explainable AI (XAI)
+- LIME-based explanation
+- Highlights important words influencing prediction
+
+Scam Categorization
+- OTP Fraud
+- Phishing
+- KYC Scam
+- Banking Scam
+- Lottery Scam
+
+Analytics Dashboard
+- Total messages processed
+- Scam vs Genuine distribution
+- Pie chart visualization
+
+Report Generation
+- Downloadable report
+- Includes predictions and logs
+
+Cybersecurity Measures
+- Alerts for risky messages
+- Safe usage suggestions
+
+---
+
+Architecture
+
+```
 User Input (Text / Voice)
         ↓
 Translation (Multilingual → English)
@@ -70,62 +84,102 @@ Prediction (Scam / Genuine)
 LIME Explanation
         ↓
 UI Output + Analytics + Report
-🛠️ Technologies Used
-🧠 AI / ML
-Python
-DistilBERT (Transformers)
-LIME (Explainable AI)
-📊 Data & Processing
-Pandas
-NumPy
-🌐 Frontend / UI
-Streamlit
-🔊 Additional Libraries
-SpeechRecognition (voice input)
-deep-translator (multilingual support)
-Matplotlib (visualization)
-🚀 How to Run
-1️⃣ Install dependencies
+```
+
+---
+
+Technologies Used
+
+AI / ML
+- Python
+- DistilBERT (Transformers)
+- LIME (Explainable AI)
+
+Data Processing
+- Pandas
+- NumPy
+
+ UI
+- Streamlit
+
+Additional Libraries
+- SpeechRecognition
+- deep-translator
+- Matplotlib
+
+---
+
+How to Run
+
+1. Install dependencies
+```
 pip install -r requirements.txt
-2️⃣ Run the application
+```
+
+2. Run the application
+```
 streamlit run detectra_ai_xai_app.py
-3️⃣ Open in browser
+```
+
+3. Open in browser
+```
 http://localhost:8501
-🧪 Example Output
-Prediction: SCAM (92%)
-Important Words: OTP, urgent, verify
-Explanation: Message contains urgency + sensitive data request
-⚠️ Challenges Faced
-Training accurate scam detection model
-Handling multilingual inputs
-Integrating LIME with deep learning model
-Designing intuitive UI
-Managing voice input and transcription
-🚀 Future Improvements
-Real-time call integration
-Mobile application deployment
-Advanced AI models (BERT fine-tuning)
-Fraud type classification system
-Live scam alert system
-🌍 SDG Mapping
-SDG 9 – Industry, Innovation and Infrastructure
-SDG 16 – Peace, Justice and Strong Institutions
-SDG 4 – Quality Education
-SDG 10 – Reduced Inequalities
-👨‍💻 Project Details
-Department: CSE-AIML & CSE-Cyber Security
-Project ID: CI05
-Guide: Dr. Naveen N C & Mrs. Asmathunnisa N
+```
+
+---
+
+Example Output
+
+- Prediction: SCAM (92%)
+- Important Words: OTP, urgent, verify
+- Explanation: Message contains urgency and sensitive data request
+
+---
+
+Challenges Faced
+
+- Handling multilingual inputs
+- Integrating LIME with deep learning model
+- Designing accurate scam detection
+- Managing voice input and transcription
+- UI design and responsiveness
+
+---
+
+Future Improvements
+
+- Real-time call integration
+- Mobile application deployment
+- Advanced AI models
+- Live scam alert system
+- Enhanced fraud classification
+
+---
+
+Project Details
+
+- Department: CSE-AIML & CSE-Cyber Security  
+- Project ID: CI05  
+- Guide: Dr. Naveen N C & Mrs. Asmathunnisa N  
+
+---
+
 👥 Team Members
-1MS22CI038 – Manasavi
-1MS23CI404 – Monica D
-1MS23CY401 – Akshatha G Dhongadi
-1MS23CY404 – Naolin Gregory Vaz
-📜 License
+
+- 1MS22CI038 – Manasavi  
+- 1MS23CI404 – Monica D  
+- 1MS23CY401 – Akshatha G Dhongadi  
+- 1MS23CY404 – Naolin Gregory Vaz  
+
+---
+
+ License
 
 This project is developed for academic and educational purposes.
 
+---
+
 ⭐ Author
 
-Final Year Engineering Project
+Final Year Engineering Project  
 AI + Cyber Security Domain
