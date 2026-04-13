@@ -125,6 +125,12 @@ streamlit run detectra_ai_xai_app.py
 ```
 http://localhost:8501
 ```
+Model Files
+
+Due to GitHub size limitations, the trained model and result files are not included in this repository.
+
+You can download them from the link below:
+https://drive.google.com/drive/folders/1rBZ0DdY4o-9lFST8Jc1OW6lz_zbAaWhX?usp=sharing
 
 ---
 
